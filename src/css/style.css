@@ -1,1 +1,138 @@
 /* YOUR CSS HERE */
+:root{
+    --main-font-color:black
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color:white;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+}
+
+input,
+button{
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+#app{
+    
+   width: 100%;
+   max-width: 1000px;
+   
+}
+
+.header{
+    height: 5rem;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}
+
+header nav{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 800;
+    
+}
+
+.title-content{
+    display: flex;
+    justify-content: center;
+    padding-bottom:  2rem ;
+}
+
+.item-content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.items{
+    background-color: white;
+    color:black;
+    width: 90%;
+    margin-bottom: 2rem;
+    border-radius: 19px ;
+    padding: 2rem;
+    text-align: center;
+}
+
+.item-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 19px ;
+}
+
+.li-cart-item{
+    width: 90%;
+    color:black;
+    font-size: larger;
+   background-color: white;
+   margin-top: 2rem;
+   display: flex;
+   
+   justify-content: center;
+}
+
+.cart-counter{
+    position: absolute;
+    top: -10px;
+    right: 2px;
+}
+
+
+@media (max-width: 768px){
+    #app{
+        width:80%
+        
+    }
+
+    .header{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        z-index: 1;
+        background-color: brown;
+    }
+    .item-content{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .items{
+        background-color: white;
+        width: 100%;
+        color:black;
+        margin-bottom: 2rem;
+        border-radius: 19px ;
+        padding: 2rem;
+    }
+    
+
+    .item-image{
+        width: 200px;
+        height: 200px;
+        border-radius: 19px ;
+    }
+}
